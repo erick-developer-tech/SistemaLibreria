@@ -1,6 +1,6 @@
-﻿namespace SistemaLibreria.Lector
+﻿namespace SistemaLibreria.Libro
 {
-    partial class FrmLector
+    partial class FrmLibro
     {
         /// <summary>
         /// Required designer variable.
@@ -33,134 +33,144 @@
             buttonBuscar = new Button();
             textBoxBuscar = new TextBox();
             label10 = new Label();
+            buttonEliminar = new Button();
             labelTotal = new Label();
             dataGridViewLista = new DataGridView();
-            textBoxCorreo = new TextBox();
-            textBoxTelefono = new TextBox();
-            textBoxNombre = new TextBox();
-            textBoxDNI = new TextBox();
+            textBoxAño = new TextBox();
+            textBoxEditorial = new TextBox();
+            textBoxAutor = new TextBox();
+            textBoxTitulo = new TextBox();
             buttonGuardar = new Button();
             buttonNuevo = new Button();
             label5 = new Label();
             label4 = new Label();
             label3 = new Label();
             label2 = new Label();
-            buttonEliminar = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridViewLista).BeginInit();
             SuspendLayout();
             // 
             // buttonCancelar
             // 
-            buttonCancelar.Location = new Point(217, 214);
+            buttonCancelar.Location = new Point(215, 206);
             buttonCancelar.Name = "buttonCancelar";
             buttonCancelar.Size = new Size(75, 23);
-            buttonCancelar.TabIndex = 53;
+            buttonCancelar.TabIndex = 71;
             buttonCancelar.Text = "Cancelar";
             buttonCancelar.UseVisualStyleBackColor = true;
             buttonCancelar.Click += buttonCancelar_Click;
             // 
             // buttonRefrescar
             // 
-            buttonRefrescar.Location = new Point(879, 29);
+            buttonRefrescar.Location = new Point(877, 21);
             buttonRefrescar.Name = "buttonRefrescar";
             buttonRefrescar.Size = new Size(75, 23);
-            buttonRefrescar.TabIndex = 52;
+            buttonRefrescar.TabIndex = 70;
             buttonRefrescar.Text = "Refrescar";
             buttonRefrescar.UseVisualStyleBackColor = true;
             buttonRefrescar.Click += buttonRefrescar_Click;
             // 
             // buttonBuscar
             // 
-            buttonBuscar.Location = new Point(798, 29);
+            buttonBuscar.Location = new Point(796, 21);
             buttonBuscar.Name = "buttonBuscar";
             buttonBuscar.Size = new Size(75, 23);
-            buttonBuscar.TabIndex = 51;
+            buttonBuscar.TabIndex = 69;
             buttonBuscar.Text = "Buscar";
             buttonBuscar.UseVisualStyleBackColor = true;
             buttonBuscar.Click += buttonBuscar_Click;
             // 
             // textBoxBuscar
             // 
-            textBoxBuscar.Location = new Point(396, 29);
+            textBoxBuscar.Location = new Point(394, 21);
             textBoxBuscar.Name = "textBoxBuscar";
-            textBoxBuscar.PlaceholderText = "Ingrese un valor para buscar por DNI exacto o Nombre.";
+            textBoxBuscar.PlaceholderText = "Ingrese un valor para buscar por Titulo, Autor o Editorial.";
             textBoxBuscar.Size = new Size(386, 23);
-            textBoxBuscar.TabIndex = 50;
+            textBoxBuscar.TabIndex = 68;
             // 
             // label10
             // 
             label10.AutoSize = true;
-            label10.Location = new Point(345, 32);
+            label10.Location = new Point(343, 24);
             label10.Name = "label10";
             label10.Size = new Size(45, 15);
-            label10.TabIndex = 49;
+            label10.TabIndex = 67;
             label10.Text = "Buscar:";
+            // 
+            // buttonEliminar
+            // 
+            buttonEliminar.Location = new Point(875, 379);
+            buttonEliminar.Name = "buttonEliminar";
+            buttonEliminar.Size = new Size(77, 23);
+            buttonEliminar.TabIndex = 66;
+            buttonEliminar.Text = "Eliminar";
+            buttonEliminar.UseVisualStyleBackColor = true;
+            buttonEliminar.Click += buttonEliminar_Click;
             // 
             // labelTotal
             // 
             labelTotal.AutoSize = true;
-            labelTotal.Location = new Point(346, 387);
+            labelTotal.Location = new Point(344, 379);
             labelTotal.Name = "labelTotal";
-            labelTotal.Size = new Size(99, 15);
-            labelTotal.TabIndex = 47;
-            labelTotal.Text = "Total de lectores: ";
+            labelTotal.Size = new Size(87, 15);
+            labelTotal.TabIndex = 65;
+            labelTotal.Text = "Total de libros: ";
             // 
             // dataGridViewLista
             // 
             dataGridViewLista.AllowUserToResizeRows = false;
             dataGridViewLista.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewLista.Location = new Point(345, 78);
+            dataGridViewLista.Location = new Point(343, 70);
             dataGridViewLista.Name = "dataGridViewLista";
             dataGridViewLista.RowHeadersVisible = false;
             dataGridViewLista.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dataGridViewLista.Size = new Size(609, 301);
-            dataGridViewLista.TabIndex = 46;
+            dataGridViewLista.TabIndex = 64;
             dataGridViewLista.DoubleClick += dataGridViewLista_DoubleClick;
             // 
-            // textBoxCorreo
+            // textBoxAño
             // 
-            textBoxCorreo.Location = new Point(72, 168);
-            textBoxCorreo.Name = "textBoxCorreo";
-            textBoxCorreo.Size = new Size(193, 23);
-            textBoxCorreo.TabIndex = 41;
+            textBoxAño.Location = new Point(56, 160);
+            textBoxAño.Name = "textBoxAño";
+            textBoxAño.Size = new Size(95, 23);
+            textBoxAño.TabIndex = 63;
             // 
-            // textBoxTelefono
+            // textBoxEditorial
             // 
-            textBoxTelefono.Location = new Point(82, 121);
-            textBoxTelefono.Name = "textBoxTelefono";
-            textBoxTelefono.Size = new Size(144, 23);
-            textBoxTelefono.TabIndex = 40;
+            textBoxEditorial.Location = new Point(77, 113);
+            textBoxEditorial.Name = "textBoxEditorial";
+            textBoxEditorial.Size = new Size(183, 23);
+            textBoxEditorial.TabIndex = 62;
             // 
-            // textBoxNombre
+            // textBoxAutor
             // 
-            textBoxNombre.Location = new Point(80, 75);
-            textBoxNombre.Name = "textBoxNombre";
-            textBoxNombre.Size = new Size(212, 23);
-            textBoxNombre.TabIndex = 39;
+            textBoxAutor.Location = new Point(65, 67);
+            textBoxAutor.Name = "textBoxAutor";
+            textBoxAutor.Size = new Size(225, 23);
+            textBoxAutor.TabIndex = 61;
             // 
-            // textBoxDNI
+            // textBoxTitulo
             // 
-            textBoxDNI.Location = new Point(56, 29);
-            textBoxDNI.Name = "textBoxDNI";
-            textBoxDNI.Size = new Size(134, 23);
-            textBoxDNI.TabIndex = 38;
+            textBoxTitulo.Location = new Point(65, 21);
+            textBoxTitulo.Name = "textBoxTitulo";
+            textBoxTitulo.Size = new Size(225, 23);
+            textBoxTitulo.TabIndex = 60;
             // 
             // buttonGuardar
             // 
-            buttonGuardar.Location = new Point(118, 214);
+            buttonGuardar.Location = new Point(116, 206);
             buttonGuardar.Name = "buttonGuardar";
             buttonGuardar.Size = new Size(75, 23);
-            buttonGuardar.TabIndex = 37;
+            buttonGuardar.TabIndex = 59;
             buttonGuardar.Text = "Guardar";
             buttonGuardar.UseVisualStyleBackColor = true;
             buttonGuardar.Click += buttonGuardar_Click;
             // 
             // buttonNuevo
             // 
-            buttonNuevo.Location = new Point(23, 214);
+            buttonNuevo.Location = new Point(21, 206);
             buttonNuevo.Name = "buttonNuevo";
             buttonNuevo.Size = new Size(75, 23);
-            buttonNuevo.TabIndex = 36;
+            buttonNuevo.TabIndex = 58;
             buttonNuevo.Text = "Nuevo";
             buttonNuevo.UseVisualStyleBackColor = true;
             buttonNuevo.Click += buttonNuevo_Click;
@@ -168,50 +178,40 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(20, 171);
+            label5.Location = new Point(18, 163);
             label5.Name = "label5";
-            label5.Size = new Size(46, 15);
-            label5.TabIndex = 31;
-            label5.Text = "Correo:";
+            label5.Size = new Size(32, 15);
+            label5.TabIndex = 57;
+            label5.Text = "Año:";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(20, 124);
+            label4.Location = new Point(18, 116);
             label4.Name = "label4";
-            label4.Size = new Size(56, 15);
-            label4.TabIndex = 30;
-            label4.Text = "Telefono:";
+            label4.Size = new Size(53, 15);
+            label4.TabIndex = 56;
+            label4.Text = "Editorial:";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(20, 78);
+            label3.Location = new Point(18, 70);
             label3.Name = "label3";
-            label3.Size = new Size(54, 15);
-            label3.TabIndex = 29;
-            label3.Text = "Nombre:";
+            label3.Size = new Size(40, 15);
+            label3.TabIndex = 55;
+            label3.Text = "Autor:";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(20, 32);
+            label2.Location = new Point(18, 24);
             label2.Name = "label2";
-            label2.Size = new Size(30, 15);
-            label2.TabIndex = 28;
-            label2.Text = "DNI:";
+            label2.Size = new Size(41, 15);
+            label2.TabIndex = 54;
+            label2.Text = "Titulo:";
             // 
-            // buttonEliminar
-            // 
-            buttonEliminar.Location = new Point(877, 387);
-            buttonEliminar.Name = "buttonEliminar";
-            buttonEliminar.Size = new Size(77, 23);
-            buttonEliminar.TabIndex = 48;
-            buttonEliminar.Text = "Eliminar";
-            buttonEliminar.UseVisualStyleBackColor = true;
-            buttonEliminar.Click += buttonEliminar_Click;
-            // 
-            // FrmLector
+            // FrmLibro
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -224,10 +224,10 @@
             Controls.Add(buttonEliminar);
             Controls.Add(labelTotal);
             Controls.Add(dataGridViewLista);
-            Controls.Add(textBoxCorreo);
-            Controls.Add(textBoxTelefono);
-            Controls.Add(textBoxNombre);
-            Controls.Add(textBoxDNI);
+            Controls.Add(textBoxAño);
+            Controls.Add(textBoxEditorial);
+            Controls.Add(textBoxAutor);
+            Controls.Add(textBoxTitulo);
             Controls.Add(buttonGuardar);
             Controls.Add(buttonNuevo);
             Controls.Add(label5);
@@ -237,9 +237,9 @@
             FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
             MinimizeBox = false;
-            Name = "FrmLector";
-            Text = "Lectores";
-            Load += FrmLector_Load;
+            Name = "FrmLibro";
+            Text = "Libros";
+            Load += FrmLibro_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridViewLista).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -252,18 +252,18 @@
         private Button buttonBuscar;
         private TextBox textBoxBuscar;
         private Label label10;
+        private Button buttonEliminar;
         private Label labelTotal;
         private DataGridView dataGridViewLista;
-        private TextBox textBoxCorreo;
-        private TextBox textBoxTelefono;
-        private TextBox textBoxNombre;
-        private TextBox textBoxDNI;
+        private TextBox textBoxAño;
+        private TextBox textBoxEditorial;
+        private TextBox textBoxAutor;
+        private TextBox textBoxTitulo;
         private Button buttonGuardar;
         private Button buttonNuevo;
         private Label label5;
         private Label label4;
         private Label label3;
         private Label label2;
-        private Button buttonEliminar;
     }
 }

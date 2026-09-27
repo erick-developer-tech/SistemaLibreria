@@ -1,5 +1,6 @@
 using SistemaLibreria.Empleado;
 using SistemaLibreria.Lector;
+using SistemaLibreria.Libro;
 
 namespace SistemaLibreria
 {
@@ -49,7 +50,15 @@ namespace SistemaLibreria
 
         private void librosToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            // Si hay un formulario hijo activo, lo cerramos
+            if (this.ActiveMdiChild != null)
+            {
+                this.ActiveMdiChild.Close();
+            }
 
+            FrmLibro frm = new FrmLibro();
+            frm.MdiParent = this;
+            frm.Show();
         }
 
         private void ejemplaresToolStripMenuItem_Click(object sender, EventArgs e)

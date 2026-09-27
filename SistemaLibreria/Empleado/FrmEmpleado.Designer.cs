@@ -336,7 +336,7 @@
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "FrmEmpleado";
-            Text = "Empleado";
+            Text = "Empleados";
             Load += FrmEmpleado_Load_1;
             ((System.ComponentModel.ISupportInitialize)dataGridViewLista).EndInit();
             ResumeLayout(false);
