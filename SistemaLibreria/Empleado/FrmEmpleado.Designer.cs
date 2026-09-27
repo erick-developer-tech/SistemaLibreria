@@ -256,7 +256,7 @@
             // 
             textBoxBuscar.Location = new Point(404, 46);
             textBoxBuscar.Name = "textBoxBuscar";
-            textBoxBuscar.PlaceholderText = "Ingrese un valor para buscar por DNI, Nombre o Usuario.";
+            textBoxBuscar.PlaceholderText = "Ingrese un valor para buscar por DNI exacto, Nombre o Usuario exacto.";
             textBoxBuscar.Size = new Size(386, 23);
             textBoxBuscar.TabIndex = 23;
             // 
