@@ -9,7 +9,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Ejemplar\" />
     <Folder Include="Sancion\" />
     <Folder Include="Prestamo\" />
   </ItemGroup>

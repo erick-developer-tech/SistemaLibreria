@@ -1,3 +1,4 @@
+using SistemaLibreria.Ejemplar;
 using SistemaLibreria.Empleado;
 using SistemaLibreria.Lector;
 using SistemaLibreria.Libro;
@@ -63,7 +64,15 @@ namespace SistemaLibreria
 
         private void ejemplaresToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            // Si hay un formulario hijo activo, lo cerramos
+            if (this.ActiveMdiChild != null)
+            {
+                this.ActiveMdiChild.Close();
+            }
 
+            FrmEjemplar frm = new FrmEjemplar();
+            frm.MdiParent = this;
+            frm.Show();
         }
 
         private void lectoresToolStripMenuItem_Click(object sender, EventArgs e)
