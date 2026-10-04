@@ -10,7 +10,6 @@
 
   <ItemGroup>
     <Folder Include="Sancion\" />
-    <Folder Include="Prestamo\" />
   </ItemGroup>
 
   <ItemGroup>

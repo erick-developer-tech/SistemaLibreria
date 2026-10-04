@@ -2,6 +2,7 @@ using SistemaLibreria.Ejemplar;
 using SistemaLibreria.Empleado;
 using SistemaLibreria.Lector;
 using SistemaLibreria.Libro;
+using SistemaLibreria.Prestamo;
 
 namespace SistemaLibreria
 {
@@ -103,7 +104,15 @@ namespace SistemaLibreria
 
         private void prestamosToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            // Si hay un formulario hijo activo, lo cerramos
+            if (this.ActiveMdiChild != null)
+            {
+                this.ActiveMdiChild.Close();
+            }
 
+            FrmPrestamo frm = new FrmPrestamo();
+            frm.MdiParent = this;
+            frm.Show();
         }
 
         private void sancionesToolStripMenuItem_Click(object sender, EventArgs e)
