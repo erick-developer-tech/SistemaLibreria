@@ -18,6 +18,8 @@ namespace AccesoDatos.Models
         public string Empleado { get; set; } = string.Empty;
         public string Observaciones { get; set; }
 
+        // Propiedad combinada para mostrar en el ComboBox
+        public string InfoCombo => $"#Préstamo {Id} - {Lector} ({FechaInicio:dd/MM/yyyy})";
         // Una cabecera de prestamo tiene una lista de uno o varios detalles
         public List<MDetallePrestamo> Detalles { get; set; } = new List<MDetallePrestamo>();
     }

@@ -3,6 +3,7 @@ using SistemaLibreria.Empleado;
 using SistemaLibreria.Lector;
 using SistemaLibreria.Libro;
 using SistemaLibreria.Prestamo;
+using SistemaLibreria.Sancion;
 
 namespace SistemaLibreria
 {
@@ -117,7 +118,22 @@ namespace SistemaLibreria
 
         private void sancionesToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            // Si hay un formulario hijo activo, lo cerramos
+            if (this.ActiveMdiChild != null)
+            {
+                this.ActiveMdiChild.Close();
+            }
 
+            FrmSancion frm = new FrmSancion();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void cerrarSesiónToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close(); // Cierra el formulario principal y vuelve al formulario de inicio de sesión
+            Login login = new Login();
+            login.Show();
         }
     }
 }

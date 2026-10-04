@@ -35,15 +35,16 @@
             empleadosToolStripMenuItem = new ToolStripMenuItem();
             prestamosToolStripMenuItem = new ToolStripMenuItem();
             sancionesToolStripMenuItem = new ToolStripMenuItem();
+            cerrarSesiónToolStripMenuItem = new ToolStripMenuItem();
             menuStripNavegacion.SuspendLayout();
             SuspendLayout();
             // 
             // menuStripNavegacion
             // 
-            menuStripNavegacion.Items.AddRange(new ToolStripItem[] { librosToolStripMenuItem, ejemplaresToolStripMenuItem, lectoresToolStripMenuItem, empleadosToolStripMenuItem, prestamosToolStripMenuItem, sancionesToolStripMenuItem });
+            menuStripNavegacion.Items.AddRange(new ToolStripItem[] { librosToolStripMenuItem, ejemplaresToolStripMenuItem, lectoresToolStripMenuItem, empleadosToolStripMenuItem, prestamosToolStripMenuItem, sancionesToolStripMenuItem, cerrarSesiónToolStripMenuItem });
             menuStripNavegacion.Location = new Point(0, 0);
             menuStripNavegacion.Name = "menuStripNavegacion";
-            menuStripNavegacion.Size = new Size(1296, 24);
+            menuStripNavegacion.Size = new Size(1465, 24);
             menuStripNavegacion.TabIndex = 0;
             menuStripNavegacion.Text = "menuStrip1";
             // 
@@ -89,12 +90,20 @@
             sancionesToolStripMenuItem.Text = "Sanciones";
             sancionesToolStripMenuItem.Click += sancionesToolStripMenuItem_Click;
             // 
+            // cerrarSesiónToolStripMenuItem
+            // 
+            cerrarSesiónToolStripMenuItem.Margin = new Padding(900, 0, 0, 0);
+            cerrarSesiónToolStripMenuItem.Name = "cerrarSesiónToolStripMenuItem";
+            cerrarSesiónToolStripMenuItem.Size = new Size(88, 20);
+            cerrarSesiónToolStripMenuItem.Text = "Cerrar Sesión";
+            cerrarSesiónToolStripMenuItem.Click += cerrarSesiónToolStripMenuItem_Click;
+            // 
             // MenuNavegacion
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Gainsboro;
-            ClientSize = new Size(1296, 733);
+            ClientSize = new Size(1465, 815);
             Controls.Add(menuStripNavegacion);
             IsMdiContainer = true;
             MainMenuStrip = menuStripNavegacion;
@@ -115,6 +124,7 @@
         private ToolStripMenuItem empleadosToolStripMenuItem;
         private ToolStripMenuItem prestamosToolStripMenuItem;
         private ToolStripMenuItem sancionesToolStripMenuItem;
+        private ToolStripMenuItem cerrarSesiónToolStripMenuItem;
         //private ToolStripMenuItem libroToolStripMenuItem;
         //private ToolStripMenuItem ejemplarToolStripMenuItem;
         //private ToolStripMenuItem empleadoToolStripMenuItem;
