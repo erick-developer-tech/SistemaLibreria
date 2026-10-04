@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuNavegacion));
             menuStripNavegacion = new MenuStrip();
             librosToolStripMenuItem = new ToolStripMenuItem();
             ejemplaresToolStripMenuItem = new ToolStripMenuItem();
@@ -44,58 +45,86 @@
             menuStripNavegacion.Items.AddRange(new ToolStripItem[] { librosToolStripMenuItem, ejemplaresToolStripMenuItem, lectoresToolStripMenuItem, empleadosToolStripMenuItem, prestamosToolStripMenuItem, sancionesToolStripMenuItem, cerrarSesiónToolStripMenuItem });
             menuStripNavegacion.Location = new Point(0, 0);
             menuStripNavegacion.Name = "menuStripNavegacion";
-            menuStripNavegacion.Size = new Size(1465, 24);
+            menuStripNavegacion.Padding = new Padding(6, 10, 0, 10);
+            menuStripNavegacion.Size = new Size(1465, 103);
             menuStripNavegacion.TabIndex = 0;
             menuStripNavegacion.Text = "menuStrip1";
             // 
             // librosToolStripMenuItem
             // 
+            librosToolStripMenuItem.Image = Properties.Resources.image_libros;
+            librosToolStripMenuItem.ImageScaling = ToolStripItemImageScaling.None;
+            librosToolStripMenuItem.Margin = new Padding(20, 0, 0, 0);
             librosToolStripMenuItem.Name = "librosToolStripMenuItem";
-            librosToolStripMenuItem.Size = new Size(51, 20);
+            librosToolStripMenuItem.Size = new Size(76, 83);
             librosToolStripMenuItem.Text = "Libros";
+            librosToolStripMenuItem.TextImageRelation = TextImageRelation.ImageAboveText;
             librosToolStripMenuItem.Click += librosToolStripMenuItem_Click;
             // 
             // ejemplaresToolStripMenuItem
             // 
+            ejemplaresToolStripMenuItem.Image = Properties.Resources.image_ejemplares;
+            ejemplaresToolStripMenuItem.ImageScaling = ToolStripItemImageScaling.None;
+            ejemplaresToolStripMenuItem.Margin = new Padding(20, 0, 0, 0);
             ejemplaresToolStripMenuItem.Name = "ejemplaresToolStripMenuItem";
-            ejemplaresToolStripMenuItem.Size = new Size(76, 20);
+            ejemplaresToolStripMenuItem.Size = new Size(76, 83);
             ejemplaresToolStripMenuItem.Text = "Ejemplares";
+            ejemplaresToolStripMenuItem.TextImageRelation = TextImageRelation.ImageAboveText;
             ejemplaresToolStripMenuItem.Click += ejemplaresToolStripMenuItem_Click;
             // 
             // lectoresToolStripMenuItem
             // 
+            lectoresToolStripMenuItem.Image = Properties.Resources.image_lectores;
+            lectoresToolStripMenuItem.ImageScaling = ToolStripItemImageScaling.None;
+            lectoresToolStripMenuItem.Margin = new Padding(20, 0, 0, 0);
             lectoresToolStripMenuItem.Name = "lectoresToolStripMenuItem";
-            lectoresToolStripMenuItem.Size = new Size(63, 20);
+            lectoresToolStripMenuItem.Size = new Size(76, 83);
             lectoresToolStripMenuItem.Text = "Lectores";
+            lectoresToolStripMenuItem.TextImageRelation = TextImageRelation.ImageAboveText;
             lectoresToolStripMenuItem.Click += lectoresToolStripMenuItem_Click;
             // 
             // empleadosToolStripMenuItem
             // 
+            empleadosToolStripMenuItem.Image = Properties.Resources.image_empleados;
+            empleadosToolStripMenuItem.ImageScaling = ToolStripItemImageScaling.None;
+            empleadosToolStripMenuItem.Margin = new Padding(20, 0, 0, 0);
             empleadosToolStripMenuItem.Name = "empleadosToolStripMenuItem";
-            empleadosToolStripMenuItem.Size = new Size(77, 20);
+            empleadosToolStripMenuItem.Size = new Size(77, 83);
             empleadosToolStripMenuItem.Text = "Empleados";
+            empleadosToolStripMenuItem.TextImageRelation = TextImageRelation.ImageAboveText;
             empleadosToolStripMenuItem.Click += empleadosToolStripMenuItem_Click;
             // 
             // prestamosToolStripMenuItem
             // 
+            prestamosToolStripMenuItem.Image = Properties.Resources.image_prestamos;
+            prestamosToolStripMenuItem.ImageScaling = ToolStripItemImageScaling.None;
+            prestamosToolStripMenuItem.Margin = new Padding(20, 0, 0, 0);
             prestamosToolStripMenuItem.Name = "prestamosToolStripMenuItem";
-            prestamosToolStripMenuItem.Size = new Size(74, 20);
+            prestamosToolStripMenuItem.Size = new Size(76, 83);
             prestamosToolStripMenuItem.Text = "Prestamos";
+            prestamosToolStripMenuItem.TextImageRelation = TextImageRelation.ImageAboveText;
             prestamosToolStripMenuItem.Click += prestamosToolStripMenuItem_Click;
             // 
             // sancionesToolStripMenuItem
             // 
+            sancionesToolStripMenuItem.Image = Properties.Resources.image_sanciones;
+            sancionesToolStripMenuItem.ImageScaling = ToolStripItemImageScaling.None;
+            sancionesToolStripMenuItem.Margin = new Padding(20, 0, 0, 0);
             sancionesToolStripMenuItem.Name = "sancionesToolStripMenuItem";
-            sancionesToolStripMenuItem.Size = new Size(72, 20);
+            sancionesToolStripMenuItem.Size = new Size(76, 83);
             sancionesToolStripMenuItem.Text = "Sanciones";
+            sancionesToolStripMenuItem.TextImageRelation = TextImageRelation.ImageAboveText;
             sancionesToolStripMenuItem.Click += sancionesToolStripMenuItem_Click;
             // 
             // cerrarSesiónToolStripMenuItem
             // 
-            cerrarSesiónToolStripMenuItem.Margin = new Padding(900, 0, 0, 0);
+            cerrarSesiónToolStripMenuItem.Image = Properties.Resources.cerrar_sesion;
+            cerrarSesiónToolStripMenuItem.ImageScaling = ToolStripItemImageScaling.None;
+            cerrarSesiónToolStripMenuItem.Margin = new Padding(750, 0, 0, 0);
             cerrarSesiónToolStripMenuItem.Name = "cerrarSesiónToolStripMenuItem";
-            cerrarSesiónToolStripMenuItem.Size = new Size(88, 20);
+            cerrarSesiónToolStripMenuItem.Size = new Size(88, 83);
             cerrarSesiónToolStripMenuItem.Text = "Cerrar Sesión";
+            cerrarSesiónToolStripMenuItem.TextImageRelation = TextImageRelation.ImageAboveText;
             cerrarSesiónToolStripMenuItem.Click += cerrarSesiónToolStripMenuItem_Click;
             // 
             // MenuNavegacion
@@ -105,8 +134,10 @@
             BackColor = Color.Gainsboro;
             ClientSize = new Size(1465, 815);
             Controls.Add(menuStripNavegacion);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             IsMdiContainer = true;
             MainMenuStrip = menuStripNavegacion;
+            MaximizeBox = false;
             Name = "MenuNavegacion";
             Text = "Menu Principal";
             menuStripNavegacion.ResumeLayout(false);

@@ -9,7 +9,42 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources\cerrar_sesion.png" />
+    <None Remove="Resources\image_ejemplares.png" />
+    <None Remove="Resources\image_empleados.png" />
+    <None Remove="Resources\image_lectores.png" />
+    <None Remove="Resources\image_libros.png" />
+    <None Remove="Resources\image_prestamos.png" />
+    <None Remove="Resources\image_sanciones.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\cerrar_sesion.png" />
+    <EmbeddedResource Include="Resources\image_ejemplares.png" />
+    <EmbeddedResource Include="Resources\image_empleados.png" />
+    <EmbeddedResource Include="Resources\image_lectores.png" />
+    <EmbeddedResource Include="Resources\image_libros.png" />
+    <EmbeddedResource Include="Resources\image_prestamos.png" />
+    <EmbeddedResource Include="Resources\image_sanciones.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\AccesoDatos\AccesoDatos.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
 
 </Project>
